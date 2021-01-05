@@ -35,7 +35,7 @@ $config['base_url'] = 'localhost/le-musee-de-lextraordinaire/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'localhost/le-musee-de-lextraordinaire/';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
