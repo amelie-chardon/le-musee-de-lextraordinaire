@@ -1,17 +1,21 @@
-let n = 0
+import { StatusBar } from 'expo-status-bar';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
-function render (){
-
-const title = React.createElement('h1', {},
-                                 'Bonjour ',
-                                 React.createElement('span',{}, n))
-
-ReactDOM.render(title,document.querySelector('#app'))
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text>Pouet</Text>
+      <StatusBar style="auto" />
+    </View>
+  );
 }
 
-render()
-
-window.setInterval(()=>{
-    n++
-    render()
-}, 1000)
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
