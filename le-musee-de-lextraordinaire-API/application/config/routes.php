@@ -79,7 +79,8 @@ $route['utilisateur/connexion']['POST'] = 'Utilisateur/connectUser';
 
 
 //Artistes
-//$route['artiste/']['GET'] = 'Artiste/getArtisteByName/$1';
+$route['artiste/byname/(:any)']['GET'] = 'Artiste/getArtisteByName/$1';
+$route['artiste']['GET'] = 'Artiste/findAll';
 $route['artiste/(:num)']['GET'] = 'Artiste/getArtisteById/$1';
 
 ?>

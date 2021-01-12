@@ -24,16 +24,16 @@ class Artiste extends CI_Controller {
         $this->load->model('Artiste_Model');
 	}
 
-	public function index()
+	public function findAll()
 	{
-		echo json_encode(["Test"=>"Artiste Page Controller"]);
+		$allArtiste = $this->Artiste_Model->getAll();
+		echo json_encode($allArtiste);
 	}
-
-	// public function getArtisteByName($nom)
-	// {
-	// 	$data = $this->Artiste_Model->getArtisteByNameModel($nom);
-	// 	echo json_encode($data);
-	// }
+	public function getArtisteByName($nom)
+	{
+		$data = $this->Artiste_Model->getArtisteByNameModel($nom);
+		echo json_encode($data);
+	}
 
 	public function getArtisteById ($id)
 	{
