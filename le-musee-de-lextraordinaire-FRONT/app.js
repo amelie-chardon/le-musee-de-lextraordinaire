@@ -1,17 +1,31 @@
-let n = 0
+import { StatusBar } from 'expo-status-bar';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import AppButton from './components/AppButton';
 
-function render (){
 
-const title = React.createElement('h1', {},
-                                 'Bonjour ',
-                                 React.createElement('span',{}, n))
-
-ReactDOM.render(title,document.querySelector('#app'))
+export default class App extends React.Component {
+    render() {
+        return (
+             <View style={styles.container}>
+      <Text>Hello world !!!</Text>
+                <StatusBar style="auto" />
+                <AppButton
+                    //onPress={onPress}
+                    title="Connexion"
+                    accessibilityLabel="Learn more about this purple button"
+                />
+    </View>
+            
+        )
+    }
 }
 
-render()
-
-window.setInterval(()=>{
-    n++
-    render()
-}, 1000)
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
