@@ -1,43 +1,42 @@
-import { StatusBar } from 'expo-status-bar';
-import React, { useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import AppButton from './components/AppButton';
-import * as Font from 'expo-font';
+import { View, StyleSheet,Container,Headers, Right, Button} from 'react-native';
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import MenuDraw from './components/MenuDraw'
 
 
-export default class App extends React.Component {
 
-    //Chargement des polices
-    componentDidMount = async () => {
-        await Font.loadAsync({
-            'BodoniModa': require('./assets/fonts/BodoniModa_6pt-Regular.ttf'),
-            'LinuxLibertine': require('./assets/fonts/linlibertine_dr-webfont.ttf'),
-        });
-        this.setState({ loading: false })
-    }
 
-    render() {
 
+
+
+
+
+const App=()=> {
         return (
-            <View style={styles.container}>
-                <Text>Hello world !!!</Text>
-                <StatusBar style="auto" />
-                <AppButton
-                    //onPress={onPress}
-                    title="Connexion"
-                    accessibilityLabel="Learn more about this purple button"
-                />
-            </View>
+         
 
-        )
+            <NavigationContainer>
+           <MenuDraw/>
+           </NavigationContainer>
+           
+        );
     }
-}
+    const styles = StyleSheet.create({
+        container: {
+          flex: 1,
+          backgroundColor: '#054A61',
+          alignItems: 'center',
+              justifyContent: 'center',
+          padding:10,
+        },
+      });
+export default App 
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+ 
+
+
+
+
+ 
+

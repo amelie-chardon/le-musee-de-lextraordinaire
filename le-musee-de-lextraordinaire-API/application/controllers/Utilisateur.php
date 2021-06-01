@@ -25,6 +25,8 @@ class Utilisateur extends CI_Controller {
 	 public function __construct()
     {
         parent::__construct();
+		header('Access-Control-Allow-Origin: *');
+        header("Access-Control-Allow-Methods: GET");
         $this->load->model('Utilisateur_model');
 		$this->load->library('Authorization_Token');
     }

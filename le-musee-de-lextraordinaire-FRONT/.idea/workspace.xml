@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c3060053-1660-41ed-8fd5-f73016d0dbb9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1naBo29O6Lb0ywVizWAJtoDGDnR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="C:/wamp64/www/le-musee-de-lextraordinaire/le-musee-de-lextraordinaire-FRONT/node_modules/expo/node_modules/expo-font/android/build.gradle" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/node_modules/expo/node_modules/expo-font/android/build.gradle" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.C:/wamp64/www/le-musee-de-lextraordinaire/le-musee-de-lextraordinaire-FRONT/node_modules/expo/node_modules/expo-font/android/build.gradle" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c3060053-1660-41ed-8fd5-f73016d0dbb9" name="Default Changelist" comment="" />
+      <created>1611618495024</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611618495024</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="609" y="422" key="#Notifications" timestamp="1611618816953">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="609" y="422" key="#Notifications/0.40.1920.1040@0.40.1920.1040" timestamp="1611618816953" />
+    <state x="178" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611618649197">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="178" y="214" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1611618649197" />
+    <state x="504" y="314" key="FileChooserDialogImpl" timestamp="1611618567619">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="504" y="314" key="FileChooserDialogImpl/0.40.1920.1040@0.40.1920.1040" timestamp="1611618567619" />
+    <state width="1411" height="266" key="GridCell.Tab.0.bottom" timestamp="1611618885397">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1411" height="266" key="GridCell.Tab.0.bottom/0.40.1920.1040@0.40.1920.1040" timestamp="1611618885397" />
+    <state width="1411" height="266" key="GridCell.Tab.0.center" timestamp="1611618885396">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1411" height="266" key="GridCell.Tab.0.center/0.40.1920.1040@0.40.1920.1040" timestamp="1611618885396" />
+    <state width="1411" height="266" key="GridCell.Tab.0.left" timestamp="1611618885396">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1411" height="266" key="GridCell.Tab.0.left/0.40.1920.1040@0.40.1920.1040" timestamp="1611618885396" />
+    <state width="1411" height="266" key="GridCell.Tab.0.right" timestamp="1611618885396">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state width="1411" height="266" key="GridCell.Tab.0.right/0.40.1920.1040@0.40.1920.1040" timestamp="1611618885396" />
+    <state x="519" y="388" key="SimpleOpenTaskDialog" timestamp="1611667862185">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="519" y="388" key="SimpleOpenTaskDialog/0.40.1920.1040@0.40.1920.1040" timestamp="1611667862185" />
+    <state x="380" y="262" width="672" height="677" key="run.anything.popup" timestamp="1611618671763">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="380" y="262" width="672" height="677" key="run.anything.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1611618671763" />
+    <state x="444" y="276" width="672" height="678" key="search.everywhere.popup" timestamp="1611667975200">
+      <screen x="0" y="40" width="1920" height="1040" />
+    </state>
+    <state x="444" y="276" width="672" height="678" key="search.everywhere.popup/0.40.1920.1040@0.40.1920.1040" timestamp="1611667975200" />
+  </component>
+</project>
