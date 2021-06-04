@@ -6,12 +6,14 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { FontAwesome5 } from "@expo/vector-icons"
 import HomeScreen  from './HomeScreen'
-import MouvementScreen from './MouvementScreen'
+import OeuvresScreen from './OeuvresScreen'
 import AleatoireScreen from './AleatoireScreen'
 import Artist from './Artiste';
 import ConnexionScreen from './ConnexionScreen'
 import InscriptionScreen from './InscriptionScreen'
-
+import ProfilScreen from './ProfilScreen'
+import AdminScreen from './AdminScreen'
+import FavorisScreen from './FavorisScreen'
 
 
 
@@ -32,12 +34,15 @@ import InscriptionScreen from './InscriptionScreen'
       return (
         
         <Drawer.Navigator initialRouteName="Accueil">
+            
             <Drawer.Screen name="Accueil" component={HomeScreen} />
             <Drawer.Screen name="Artiste" component={Artist} />
             <Drawer.Screen name="Mouvement" component={MouvementScreen} />
-            <Drawer.Screen name="Aleatoire" component={AleatoireScreen} />
+            {/* <Drawer.Screen name="Aleatoire" component={AleatoireScreen} /> */}
             <Drawer.Screen name="Se connecter" component={ConnexionScreen} />
             <Drawer.Screen name="S'inscrire" component={InscriptionScreen} />
+          
+
 
 
             {/* Ici exemple de comment faire pop un onglet */}
@@ -66,12 +71,18 @@ const Tab = createBottomTabNavigator();
 function OngletTabs(){
     return (
       <Tab.Navigator>
+        
+        
         <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Aleatoire" component={AleatoireScreen} />
+        {/* <Tab.Screen name="Aleatoire" component={AleatoireScreen} /> */}
         <Tab.Screen name="Artistes" component={Artist} />
-        <Tab.Screen name="Mouvements" component={MouvementScreen} />
+        <Tab.Screen name="Mouvements" component={OeuvresScreen} />
         <Tab.Screen name="Se connecter" component={ConnexionScreen} />
         <Tab.Screen name="S'inscrire" component={InscriptionScreen} />
+        <Tab.Screen name="Profil" component={ProfilScreen} />
+        {/* <Tab.Screen name="Admin" component={AdminScreen} /> */}
+        {/* <Tab.Screen name="Favoris" component={FavorisScreen} /> */}
+         
       </Tab.Navigator>
      
       

@@ -4,39 +4,20 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import { View, Button, Text, SafeAreaView, Image, TouchableOpacity, StyleSheet, Pressable } from 'react-native';
 
-const Stack = createStackNavigator();
-// const Pouet = useNavigation();
-const navOptionHandler =()=>({
-  headerShow:false
-})
 
-function HomeStack(){
-  <Stack.Navigator>
-    <Stack.Screen name="Home" component={HomeScreen} options={navOptionHandler}/>
-  </Stack.Navigator>
-}
-
-function Burger(navigation){
-  return(
-    <View style={{flexDirection:'row', height: 50}}>
-      <View style={{flex:1, justifyContent:'center'}}>
-        <TouchableOpacity onPress = {()=> navigation.openDrawer()}>
-        <Image style={{width:30, height:30, marginLeft:5}}
-        source={require('./menu.png')}
-        />
-        </TouchableOpacity>
-        
-      </View>
-    </View>
-  )
-}
 
  const HomeScreen = ({ navigation }) =>{
    
     return (
-      <View style={{flex: 1}}>
-            <Text style={{flex:1,textAlign:'center', justifyContent:'center'}}> Bienvenue sur la page d'acceuil ! </Text>
-        <View style={{flex : 10, alignItems: 'center', justifyContent: 'center'}}>
+      <View style={{flex:1,backgroundColor: "#054A61"}}>
+          <View style={{flexDirection: "row", justifyContent: 'space-between',  marginTop:50, alignItems:'center', borderColor:'#fff',borderWidth: 5, shadowColor: "black", fontFamily:'LinuxLibertine'}}>
+            <Image source = {require('../assets/img/cat.jpg')} style={{width:200, height:150, borderColor:'#fff',borderWidth: 5}}></Image>
+            <Text style={{color:'#FFF', fontSize:40,margin:'auto', fontFamily:'LinuxLibertine'}}> Accueil </Text>
+          </View>
+
+            <Text style={{textAlign:'center', justifyContent:'center', color:'#FFF', fontSize:25, fontFamily:'LinuxLibertine'}}> Bienvenue sur la page d'accueil</Text>
+          
+        <View style={{flex : 2, alignItems: 'center', justifyContent: 'center'}}>
           {/* <Burger  title="home" navigation={navigation}/> */}
       
           <Pressable
@@ -65,7 +46,7 @@ function Burger(navigation){
             onPress={() => navigation.navigate("Aleatoire")}
           /> */}
         </View>
-        <View style={{flex: 1 ,flexDirection: "row", justifyContent: 'space-around' }}>
+        <View style={{flexDirection: "row", justifyContent: 'space-around' }}>
           <Pressable
             style={m.button}
             title="Inscription"
@@ -96,16 +77,15 @@ function Burger(navigation){
       paddingVertical: 12,
       paddingHorizontal: 32,
       borderRadius: 4,
-      elevation: 3,
+      // elevation: 3,
       backgroundColor: "#ECDABA",
       marginBottom: 20
     },
     text: {
-      fontSize: 16,
-      lineHeight: 21,
-      fontWeight: 'bold',
-      letterSpacing: 0.25,
-      color: 'white',
+      fontSize: 20,
+        color: "#054A61",
+        alignSelf: "center",
+        fontFamily:'LinuxLibertine'
     },
   });
   export default HomeScreen

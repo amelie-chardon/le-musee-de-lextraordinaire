@@ -3,7 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { FlatList, Text, View,Image,ImageBackground,Button , StyleSheet, ScrollView} from 'react-native';
 // import styles from '../assets/css/styles';
 
-export default class Artist extends React.Component{
+export default class Oeuvres extends React.Component{
 
     constructor(props) {
         super(props);
@@ -14,7 +14,7 @@ export default class Artist extends React.Component{
     }
 
     componentDidMount() {
-        fetch('https://amelie-chardon.students-laplateforme.io/le-musee-de-lextraordinaire-API/artiste')
+        fetch('https://amelie-chardon.students-laplateforme.io/le-musee-de-lextraordinaire-API/oeuvres')
             .then((response) => response.json())
             .then((responseData) => this.setState({
                 loading: true,
@@ -27,24 +27,23 @@ export default class Artist extends React.Component{
    
     render() {
         
-        const artistes = this.state.data.map((val, key) => {
+        const oeuvres = this.state.data.map((val, key) => {
         let url  = `https://amelie-chardon.students-laplateforme.io/le-musee-de-lextraordinaire-API/user_guide/_static/images/${val.img}`;
             return(
+              
                 <View key={key} style={styles.Views}>
-                    <Text style={{color:"#054A61", padding:20,fontFamily:'LinuxLibertine',fontSize:20,fontWeight: 'bold',fontFamily:'LinuxLibertine'}}>{val.artiste}</Text>
+                    <Text style={{color:"#fff", padding:20,fontFamily:'LinuxLibertine',fontSize:20}}>{val.mouvement}</Text>
                     <Image style={styles.Image} source={{uri: url}}/>
-                    <Text style={{color:"#054A61", fontSize:15,  fontWeight: 'bold',fontFamily:'LinuxLibertine'}}>{val.mouvement}</Text>
-                    <Text style={{color:"#fff",fontFamily:'LinuxLibertine', padding:10, textAlign:'center', fontSize:15}}>{val.biographie}</Text>
                 </View>
             )
          });
         return (
-            <ScrollView style={{backgroundColor:'#ECDABA'}}>
-                <View style={{flexDirection: "row", justifyContent: 'space-between',  alignItems:'center', borderColor:'#fff',borderWidth: 5, shadowColor: "black", fontFamily:'LinuxLibertine'}}>
-                <Image source = {require('../assets/img/cat.jpg')} style={{width:200, height:150, borderColor:'#fff',borderWidth: 5}}></Image>
-                <Text style={{color:'#FFF', fontSize:40,margin:'auto', fontFamily:'LinuxLibertine'}}> Artistes </Text>
-                </View>
-                <View>{artistes}</View>
+            <ScrollView style={{backgroundColor: "#054A61"}}>
+              <View style={{flexDirection: "row", justifyContent: 'space-between',  marginTop:50, alignItems:'center', borderColor:'#fff',borderWidth: 5, shadowColor: "black", fontFamily:'LinuxLibertine'}}>
+            <Image source = {require('../assets/img/cat.jpg')} style={{width:200, height:150, borderColor:'#fff',borderWidth: 5}}></Image>
+            <Text style={{color:'#FFF', fontSize:40,margin:'auto', fontFamily:'LinuxLibertine'}}> Mouvements </Text>
+          </View>
+                <View>{oeuvres}</View>
             </ScrollView>
         )
         
@@ -59,6 +58,7 @@ const styles = StyleSheet.create({
       alignItems: 'center',
           justifyContent: 'center',
       padding:10,
+      
     },
     Image:{
         width:150,
@@ -69,8 +69,7 @@ const styles = StyleSheet.create({
     Views:{
         display:'flex',
         alignItems:'center',
-        marginBottom:20,
-        
+        padding:20
     }
   });
 

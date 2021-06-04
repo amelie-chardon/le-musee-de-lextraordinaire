@@ -69,7 +69,7 @@ $route['favoris/(:num)']['DELETE'] = 'favoris/deleteFavoris/$1'; //id_oeuvre
 
 
 //Utilisateurs
-
+$route['all']['GET'] = 'Utilisateur/getAll';
 $route['utilisateur']['GET'] = 'Utilisateur/getUser';
 $route['utilisateur']['DELETE'] = 'Utilisateur/deleteUser';
 $route['utilisateur']['POST'] = 'Utilisateur/addUser';

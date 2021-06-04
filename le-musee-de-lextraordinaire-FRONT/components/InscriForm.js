@@ -80,11 +80,19 @@ export default class LoginForm extends React.Component {
                 <View style={{flex:1,backgroundColor: "#054A61"}}>
                      <View style={{flexDirection: "row", justifyContent: 'space-between',  marginTop:50, alignItems:'center', borderColor:'#fff',borderWidth: 5, shadowColor: "black"}}>
                         <Image source = {require('../assets/img/cat.jpg')} style={{width:200, height:150, borderColor:'#fff',borderWidth: 5}}></Image>
-                        <Text style={{color:'#FFF', fontSize:40,margin:'auto', fontFamily:'LinuxLibertine'}}> Connexion </Text>
+                        <Text style={{color:'#FFF', fontSize:40,margin:'auto', fontFamily:'LinuxLibertine'}}> Inscription</Text>
                     </View>
                 <View style={{flex : 5, alignItems: 'center', justifyContent: 'space-around', flexDirection:'column',height:100}}>
                 
-
+                    <TextInput
+                            style= {{borderBottomColor:'#fff', borderBottomWidth:1, fontSize:'150%', fontFamily:'LinuxLibertine'}}
+                            name ="Login"
+                            type="Login" 
+                            value={this.state.value} 
+                            onChange={this.handleChange}
+                            label='Login'
+                            placeholder='Login'
+                            />
                     <TextInput
                             style= {{borderBottomColor:'#fff', borderBottomWidth:1, fontSize:'150%', fontFamily:'LinuxLibertine'}}
                             name ="email"
@@ -104,15 +112,12 @@ export default class LoginForm extends React.Component {
                             placeholder='Mot de passe'
                             />
                    
-                  {/* <input type="submit" value="Envoyer" style={{backgroundColor: "#ECDABA",
-                                                                borderRadius: 10,
-                                                                paddingVertical: 10,
-                                                                paddingHorizontal: 12,
-                                                                elevation: 8}} /> */}
-                <TouchableOpacity 
-                    onPress={() => {{'handleSubmit'}}} style={styles.appButtonContainer}>
-                    <Text style={styles.appButtonText}>Envoyer</Text>
-                </TouchableOpacity>
+                        <TouchableOpacity 
+                           onPress={this.handleSubmit} style={styles.appButtonContainer}>
+                            <Text style={styles.appButtonText}>Envoyer</Text>
+                        </TouchableOpacity>
+                
+                
     
     
  

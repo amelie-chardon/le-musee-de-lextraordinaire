@@ -5,9 +5,7 @@ import LoginForm from './LoginForm';
 
 const ConnexionScreen = ({ navigation }) => {
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <LoginForm/>
-      </View>
     );
   }
 

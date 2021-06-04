@@ -55,6 +55,13 @@ class Utilisateur extends CI_Controller {
 			echo $result;
 		}
 	}
+	public function getAll(){
+		
+		$data=$this->Utilisateur_model->getAll();
+
+			$result=json_encode($data);
+			echo $result;
+	}
 
 	public function deleteUser(){
 
