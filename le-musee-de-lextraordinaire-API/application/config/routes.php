@@ -58,7 +58,9 @@ $route['translate_uri_dashes'] = FALSE;
 //Oeuvres 
 $route['oeuvres']['GET'] = 'Oeuvre/findAll';
 $route['oeuvres/(:num)']['GET'] = 'oeuvre/findById/$1';
-$route['oeuvres/new'] = 'Oeuvre/new';
+$route['oeuvres/new']['POST'] = 'oeuvre/new';
+$route['oeuvres/edit/(:num)']['POST'] = 'oeuvre/edit/$1';
+$route['oeuvres/delete/(:num)']['DELETE'] = 'oeuvre/delete/$1';
 $route['oeuvres/artiste/(:num)']['GET'] = 'oeuvre/findByArtiste/$1';
 $route['oeuvres/mouvement/(:num)']['GET'] = 'oeuvre/findByMouvement/$1';
 
@@ -67,9 +69,15 @@ $route['favoris']['POST'] = 'favoris/newFavoris';
 $route['favoris/(:num)']['GET'] = 'favoris/getFavoris/$1';
 $route['favoris/(:num)']['DELETE'] = 'favoris/deleteFavoris/$1'; //id_oeuvre
 
+//Mouvement
+$route['mouvements']['GET'] = 'Mouvement/findAll';
+$route['mouvements/(:num)']['GET'] = 'Mouvement/findById/$1';
+$route['mouvements/new']['POST'] = 'Mouvement/new';
+$route['mouvements/edit/(:num)']['POST'] = 'Mouvement/edit/$1';
+$route['mouvements/delete/(:num)']['DELETE'] = 'Mouvement/delete/$1';
 
 //Utilisateurs
-$route['all']['GET'] = 'Utilisateur/getAll';
+
 $route['utilisateur']['GET'] = 'Utilisateur/getUser';
 $route['utilisateur']['DELETE'] = 'Utilisateur/deleteUser';
 $route['utilisateur']['POST'] = 'Utilisateur/addUser';
@@ -82,5 +90,8 @@ $route['utilisateur/connexion']['POST'] = 'Utilisateur/connectUser';
 $route['artiste/byname/(:any)']['GET'] = 'Artiste/getArtisteByName/$1';
 $route['artiste']['GET'] = 'Artiste/findAll';
 $route['artiste/(:num)']['GET'] = 'Artiste/getArtisteById/$1';
+$route['artiste/new']['POST'] = 'Artiste/new';
+$route['artiste/edit/(:num)']['POST'] = 'Artiste/edit/$1';
+$route['artiste/delete/(:num)']['DELETE'] = 'Artiste/delete/$1';
 
 ?>

@@ -31,18 +31,18 @@ export default class Artist extends React.Component{
         let url  = `https://amelie-chardon.students-laplateforme.io/le-musee-de-lextraordinaire-API/user_guide/_static/images/${val.img}`;
             return(
                 <View key={key} style={styles.Views}>
-                    <Text style={{color:"#054A61", padding:20,fontFamily:'LinuxLibertine',fontSize:20,fontWeight: 'bold',fontFamily:'LinuxLibertine'}}>{val.artiste}</Text>
+                    <Text style={{color:"#054A61", padding:20,fontSize:20,fontWeight: 'bold'}}>{val.artiste}</Text>
                     <Image style={styles.Image} source={{uri: url}}/>
-                    <Text style={{color:"#054A61", fontSize:15,  fontWeight: 'bold',fontFamily:'LinuxLibertine'}}>{val.mouvement}</Text>
-                    <Text style={{color:"#fff",fontFamily:'LinuxLibertine', padding:10, textAlign:'center', fontSize:15}}>{val.biographie}</Text>
+                    <Text style={{color:"#054A61", fontSize:15,  fontWeight: 'bold'}}>{val.mouvement}</Text>
+                    <Text style={{color:"#fff", padding:10, textAlign:'center', fontSize:15}}>{val.biographie}</Text>
                 </View>
             )
          });
         return (
             <ScrollView style={{backgroundColor:'#ECDABA'}}>
-                <View style={{flexDirection: "row", justifyContent: 'space-between',  alignItems:'center', borderColor:'#fff',borderWidth: 5, shadowColor: "black", fontFamily:'LinuxLibertine'}}>
+                <View style={{flexDirection: "row", justifyContent: 'space-between',  alignItems:'center', borderColor:'#fff',borderWidth: 5, shadowColor: "black"}}>
                 <Image source = {require('../assets/img/cat.jpg')} style={{width:200, height:150, borderColor:'#fff',borderWidth: 5}}></Image>
-                <Text style={{color:'#FFF', fontSize:40,margin:'auto', fontFamily:'LinuxLibertine'}}> Artistes </Text>
+                <Text style={{color:'#FFF', fontSize:40,margin:'auto'}}> Artistes </Text>
                 </View>
                 <View>{artistes}</View>
             </ScrollView>

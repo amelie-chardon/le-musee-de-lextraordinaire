@@ -24,16 +24,6 @@ class Utilisateur_model extends CI_Model {
 			return $query->result();
         }
 
-		////Récupère les infos de tout les utilisateurs
-		public function getAll()
-		{
-			
-		$this->db->select('*')->from ('utilisateurs');
-		$query =  $this->db->get();
-		return $query->result();
-			
-		}
-
 		//Supprimer un utilisateur
         public function deleteUser($id)
         {

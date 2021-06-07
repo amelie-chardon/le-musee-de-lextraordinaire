@@ -55,4 +55,38 @@ class Oeuvres_model extends CI_Model
 		$query = $this->db->get();
 		return $query->result();
 	}
+
+	public function addNewOeuvre($title, $date, $img, $id_mouvement, $id_artiste, $anecdote){
+		$data = array(
+			'titre' => $title,
+			'date' => $date,
+			'img' => $img,
+			'id_mouvement' => $id_mouvement,
+			'id_artiste' => $id_artiste,
+			'anecdote' => $anecdote
+		);
+		$this->db->insert('oeuvres', $data);
+		return true;
+	}
+
+	public function editOeuvre($id, $title, $date, $img, $id_mouvement, $id_artiste, $anecdote){
+		$data = array(
+			'titre' => $title,
+			'date' => $date,
+			'img' => $img,
+			'id_mouvement' => $id_mouvement,
+			'id_artiste' => $id_artiste,
+			'anecdote' => $anecdote
+		);
+		$this->db->where('id', $id);
+		$this->db->update('oeuvres', $data);
+		return true;
+	}
+
+	public function deleteOeuvres($id){
+
+		$this->db->where('id', $id);
+		$this->db->delete('oeuvres');
+		return true;
+	}
 }

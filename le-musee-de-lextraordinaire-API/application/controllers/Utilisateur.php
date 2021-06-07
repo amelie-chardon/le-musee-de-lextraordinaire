@@ -26,7 +26,7 @@ class Utilisateur extends CI_Controller {
     {
         parent::__construct();
 		header('Access-Control-Allow-Origin: *');
-        header("Access-Control-Allow-Methods: GET");
+        header('Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE');
         $this->load->model('Utilisateur_model');
 		$this->load->library('Authorization_Token');
     }
@@ -54,13 +54,6 @@ class Utilisateur extends CI_Controller {
 			$result=json_encode($message);
 			echo $result;
 		}
-	}
-	public function getAll(){
-		
-		$data=$this->Utilisateur_model->getAll();
-
-			$result=json_encode($data);
-			echo $result;
 	}
 
 	public function deleteUser(){

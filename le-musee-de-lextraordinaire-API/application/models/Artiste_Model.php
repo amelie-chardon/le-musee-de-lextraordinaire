@@ -63,6 +63,36 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		}
 	}
 
+	public function addNewArtist($name, $img, $bio, $id_mouvement){
+		$data = array(
+			'Nom' => $name,
+			'img' => $img,
+			'biographie' => $bio,
+			'id_mouvement' => $id_mouvement
+		);
+		$this->db->insert('artistes', $data);
+		return true;
+	}
+
+	public function editArtist($id, $name, $img, $bio, $id_mouvement){
+		$data = array(
+			'nom' => $name,
+			'img' => $img,
+			'biographie' => $bio,
+			'id_mouvement' => $id_mouvement
+		);
+		$this->db->where('id', $id);
+		$this->db->update('artistes', $data);
+		return true;
+	}
+
+	public function deleteArtist($id){
+
+		$this->db->where('id', $id);
+		$this->db->delete('Artistes');
+		return true;
+	}
+
 
     }
 

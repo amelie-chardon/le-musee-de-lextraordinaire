@@ -10,12 +10,12 @@ import { View, Button, Text, SafeAreaView, Image, TouchableOpacity, StyleSheet, 
    
     return (
       <View style={{flex:1,backgroundColor: "#054A61"}}>
-          <View style={{flexDirection: "row", justifyContent: 'space-between',  marginTop:50, alignItems:'center', borderColor:'#fff',borderWidth: 5, shadowColor: "black", fontFamily:'LinuxLibertine'}}>
+          <View style={{flexDirection: "row", justifyContent: 'space-between',  marginTop:50, alignItems:'center', borderColor:'#fff',borderWidth: 5, shadowColor: "black"}}>
             <Image source = {require('../assets/img/cat.jpg')} style={{width:200, height:150, borderColor:'#fff',borderWidth: 5}}></Image>
-            <Text style={{color:'#FFF', fontSize:40,margin:'auto', fontFamily:'LinuxLibertine'}}> Accueil </Text>
+            <Text style={{color:'#FFF', fontSize:40,margin:'auto'}}> Accueil </Text>
           </View>
 
-            <Text style={{textAlign:'center', justifyContent:'center', color:'#FFF', fontSize:25, fontFamily:'LinuxLibertine'}}> Bienvenue sur la page d'accueil</Text>
+            <Text style={{textAlign:'center', justifyContent:'center', color:'#FFF', fontSize:25}}> Bienvenue sur la page d'accueil</Text>
           
         <View style={{flex : 2, alignItems: 'center', justifyContent: 'center'}}>
           {/* <Burger  title="home" navigation={navigation}/> */}
@@ -84,8 +84,7 @@ import { View, Button, Text, SafeAreaView, Image, TouchableOpacity, StyleSheet, 
     text: {
       fontSize: 20,
         color: "#054A61",
-        alignSelf: "center",
-        fontFamily:'LinuxLibertine'
+        alignSelf: "center"
     },
   });
   export default HomeScreen
