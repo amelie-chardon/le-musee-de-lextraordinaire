@@ -55,6 +55,7 @@ $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+<<<<<<< HEAD:le-musee-de-lextraordinaire-API/application/config/routes.php
 //Oeuvres 
 $route['oeuvres']['GET'] = 'Oeuvre/findAll';
 $route['oeuvres/(:num)']['GET'] = 'oeuvre/findById/$1';
@@ -95,3 +96,9 @@ $route['artiste/edit/(:num)']['POST'] = 'Artiste/edit/$1';
 $route['artiste/delete/(:num)']['DELETE'] = 'Artiste/delete/$1';
 
 ?>
+=======
+
+$route['Artiste/(:any)']['GET'] = 'Artiste/GetArtiste/$1';
+
+?>
+>>>>>>> remotes/origin/Sarah:application/config/routes.php
