@@ -13,8 +13,6 @@ import MenuDraw from './components/MenuDraw'
 
 const App=()=> {
         return (
-         
-
             <NavigationContainer>
            <MenuDraw/>
            </NavigationContainer>

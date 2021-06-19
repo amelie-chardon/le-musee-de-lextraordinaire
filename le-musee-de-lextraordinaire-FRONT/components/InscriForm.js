@@ -185,7 +185,7 @@ export default class LoginForm extends React.Component {
     appButtonText: {
         fontSize: 20,
         color: "#054A61",
-        alignSelf: "center",
+        alignSelf: "center"
     },
 });
 

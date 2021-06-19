@@ -67,12 +67,12 @@ export default class ProfilForm extends React.Component {
                 <View style={{flex:1,backgroundColor: "#054A61"}}>
                      <View style={{flexDirection: "row", justifyContent: 'space-between',  marginTop:50, alignItems:'center', borderColor:'#fff',borderWidth: 5, shadowColor: "black"}}>
                         <Image source = {require('../assets/img/cat.jpg')} style={{width:200, height:150, borderColor:'#fff',borderWidth: 5}}></Image>
-                        <Text style={{color:'#FFF', fontSize:40,margin:'auto'}}>Mon profil</Text>
+                        <Text style={{color:'#FFF', fontSize:40,margin:'auto', fontFamily:'LinuxLibertine'}}>Mon profil</Text>
                     </View>
                 <View style={{flex : 5, alignItems: 'center', justifyContent: 'space-around', flexDirection:'column',height:100}}>
                 
                     <TextInput
-                            style= {{borderBottomColor:'#fff', borderBottomWidth:1, fontSize:'150%'}}
+                            style= {{borderBottomColor:'#fff', borderBottomWidth:1, fontSize:'150%', fontFamily:'LinuxLibertine'}}
                             name ="Login"
                             type="Text" 
                             value={this.state.value} 
@@ -81,7 +81,7 @@ export default class ProfilForm extends React.Component {
                             placeholder='Login'
                             />
                     <TextInput
-                            style= {{borderBottomColor:'#fff', borderBottomWidth:1, fontSize:'150%'}}
+                            style= {{borderBottomColor:'#fff', borderBottomWidth:1, fontSize:'150%', fontFamily:'LinuxLibertine'}}
                             name ="email"
                             type="email" 
                             value={this.state.value} 
@@ -90,7 +90,7 @@ export default class ProfilForm extends React.Component {
                             placeholder='Email'
                             />
                     <TextInput  
-                            style= {{borderBottomColor:'#fff', borderBottomWidth:1,fontSize:'150%'}}
+                            style= {{borderBottomColor:'#fff', borderBottomWidth:1,fontSize:'150%',fontFamily:'LinuxLibertine'}}
                             name ="mdp"
                             type="password" 
                             value={this.state.value} 
@@ -128,7 +128,7 @@ export default class ProfilForm extends React.Component {
     const styles = StyleSheet.create({
     appButtonContainer: {
         elevation: 8,
-        backgroundColor: "#ECDABA",
+        backgroundColor:"#ECDABA",
         borderRadius: 10,
         paddingVertical: 10,
         paddingHorizontal: 12
@@ -137,6 +137,7 @@ export default class ProfilForm extends React.Component {
         fontSize: 20,
         color: "#054A61",
         alignSelf: "center",
+        fontFamily:'LinuxLibertine'
     },
 });
 

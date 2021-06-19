@@ -13,7 +13,7 @@ export default class LoginForm extends React.Component {
 
     constructor(props) {
         super(props);
-
+        console.log('Bind Login form');
         //Load API
         this.loading = true;
         this.data = null;
@@ -27,11 +27,12 @@ export default class LoginForm extends React.Component {
     //Lors d'un changement dans le formulaire
     handleChange(event) {
         this.setState({ [event.target.type]: event.target.value });
-        console.log(this.state);
+        console.log('handleChange ok');
     }
 
     //Lors de l'envoi du formulaire
     handleSubmit(event) {
+        console.log('handleSubmit');
         event.preventDefault();
         console.log('Try submit');
         console.log(this.state.email);
@@ -80,13 +81,13 @@ export default class LoginForm extends React.Component {
                 <View style={{flex:1,backgroundColor: "#054A61"}}>
                      <View style={{flexDirection: "row", justifyContent: 'space-between',  marginTop:50, alignItems:'center', borderColor:'#fff',borderWidth: 5, shadowColor: "black"}}>
                         <Image source = {require('../assets/img/cat.jpg')} style={{width:200, height:150, borderColor:'#fff',borderWidth: 5}}></Image>
-                        <Text style={{color:'#FFF', fontSize:40,margin:'auto'}}> Connexion </Text>
+                        <Text style={{color:'#FFF', fontSize:40,margin:'auto', fontFamily:'LinuxLibertine'}}> Connexion </Text>
                     </View>
                 <View style={{flex : 5, alignItems: 'center', justifyContent: 'space-around', flexDirection:'column',height:100}}>
                 
 
                     <TextInput
-                            style= {{borderBottomColor:'#fff', borderBottomWidth:1, fontSize:'150%'}}
+                            style= {{borderBottomColor:'#fff', borderBottomWidth:1, fontSize:'150%', fontFamily:'LinuxLibertine'}}
                             name ="email"
                             type="email" 
                             value={this.state.value} 
@@ -95,7 +96,7 @@ export default class LoginForm extends React.Component {
                             placeholder='Email'
                             />
                     <TextInput  
-                            style= {{borderBottomColor:'#fff', borderBottomWidth:1,fontSize:'150%'}}
+                            style= {{borderBottomColor:'#fff', borderBottomWidth:1,fontSize:'150%',fontFamily:'LinuxLibertine'}}
                             name ="mdp"
                             type="password" 
                             value={this.state.value} 
@@ -110,7 +111,7 @@ export default class LoginForm extends React.Component {
                                                                 paddingHorizontal: 12,
                                                                 elevation: 8}} /> */}
                 <TouchableOpacity 
-                    onPress={() => {{'handleSubmit'}}} style={styles.appButtonContainer}>
+                    onPress={this.handleSubmit} style={styles.appButtonContainer}>
                     <Text style={styles.appButtonText}>Envoyer</Text>
                 </TouchableOpacity>
     
@@ -181,6 +182,7 @@ export default class LoginForm extends React.Component {
         fontSize: 20,
         color: "#054A61",
         alignSelf: "center",
+        fontFamily:'LinuxLibertine'
     },
 });
 

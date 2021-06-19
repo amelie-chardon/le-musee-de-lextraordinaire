@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { FlatList, Text, View,Image,ImageBackground,Button , StyleSheet, ScrollView} from 'react-native';
+import { FlatList, Text, View,Image,ImageBackground,Button , StyleSheet, ScrollView, TouchableOpacity} from 'react-native';
 // import styles from '../assets/css/styles';
 
 export default class Artist extends React.Component{
@@ -32,7 +32,10 @@ export default class Artist extends React.Component{
             return(
                 <View key={key} style={styles.Views}>
                     <Text style={{color:"#054A61", padding:20,fontSize:20,fontWeight: 'bold'}}>{val.artiste}</Text>
-                    <Image style={styles.Image} source={{uri: url}}/>
+                    <TouchableOpacity 
+                    onPress={() => this.props.navigation.navigate('Artiste',{val})}>
+                    <Image style={styles.Image} source={{uri: url}}/> 
+                    </TouchableOpacity>
                     <Text style={{color:"#054A61", fontSize:15,  fontWeight: 'bold'}}>{val.mouvement}</Text>
                     <Text style={{color:"#fff", padding:10, textAlign:'center', fontSize:15}}>{val.biographie}</Text>
                 </View>
